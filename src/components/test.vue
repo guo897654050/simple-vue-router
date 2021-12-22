@@ -1,7 +1,8 @@
 <template>
   <div>
-    <p @click="clickHandle">test</p>
-    <router-link to="/" tag="div">to home</router-link>
+    <!-- <p @click="clickHandle">test</p>
+    <router-link to="/" tag="div">to home</router-link> -->
+    <div>我是test组件</div>
   </div>
 </template>
 <script>
@@ -13,7 +14,7 @@
     },
     methods: {
       clickHandle() {
-        console.log('click', this.$router.push('/'))
+        // console.log('click', this.$router.push('/'))
       }
     }
   }
