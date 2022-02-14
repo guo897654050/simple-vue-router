@@ -1,4 +1,4 @@
-# simle-vue-router
+# simple-vue-router
 ### vue-router简单实现原理
 1. 插件要实现自己的install方法，通过`vue use(VueRouter)`来调用插件的install方法。其中`install`方法通过Vue的mixin在`beforeCreate` 时机将路由挂在到vue的prototype上。
 2. 其次，如何将插件的router挂在到vue的proptotype上面。其中插件的`install`方法会拿到vue实例的`$options`，其中`$options`就是`new Vew({})`的入参。由于在`new vue`时候传入了`router`所以通过options可以拿到。
